@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1831</width>
+    <height>1178</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame {
+	background-color: #0DFFFFFF;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: #5dce17;
+	background-color: #121212;
+}
+QHeaderView::section {
+    background-color: #0DFFFFFF;
+	border: 0px;
+}
+QTableWidget {
+	background-color: #0DFFFFFF;
+	alternate-background-color: #1AFFFFFF;
+}
+.QFrame {
+	background-color: #0DFFFFFF;
+}
+QComboBox {
+	background-color: #1AFFFFFF;
+	border: 0px;
+}
+QLabel {
+	background-color: #0DFFFFFF;
+	border-radius: 5px;
+	padding: 2px;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="CharacterTab">
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Character</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="CharacterPanel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>150</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>700</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="CharacterDisplayFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="horizontalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>611</width>
+                <height>611</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="GearDisplay">
+               <property name="sizeConstraint">
+                <enum>QLayout::SetMinimumSize</enum>
+               </property>
+               <item>
+                <widget class="QFrame" name="GearFrameLeft">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QWidget" name="verticalLayoutWidget_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>20</y>
+                    <width>58</width>
+                    <height>492</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="Left">
+                   <item>
+                    <widget class="GearSlot" name="Slot111" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_4">
+                      <item>
+                       <widget class="QLabel" name="label_11">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_2" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_15">
+                      <item>
+                       <widget class="QLabel" name="label_12">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_3" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_16">
+                      <item>
+                       <widget class="QLabel" name="label_13">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_4" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_17">
+                      <item>
+                       <widget class="QLabel" name="label_14">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_5" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_18">
+                      <item>
+                       <widget class="QLabel" name="label_15">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_6" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_19">
+                      <item>
+                       <widget class="QLabel" name="label_16">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_7" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_20">
+                      <item>
+                       <widget class="QLabel" name="label_17">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_8" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_21">
+                      <item>
+                       <widget class="QLabel" name="label_18">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="GearFrameMiddle">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QWidget" name="verticalLayoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>331</width>
+                    <height>561</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <widget class="QFrame" name="frame_2">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_4">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QWidget" name="horizontalLayoutWidget_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>311</width>
+                        <height>201</height>
+                       </rect>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_2">
+                       <property name="sizeConstraint">
+                        <enum>QLayout::SetFixedSize</enum>
+                       </property>
+                       <item>
+                        <widget class="QTableWidget" name="attributes_table">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="sizeAdjustPolicy">
+                          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                         </property>
+                         <property name="autoScroll">
+                          <bool>true</bool>
+                         </property>
+                         <attribute name="horizontalHeaderVisible">
+                          <bool>false</bool>
+                         </attribute>
+                         <attribute name="verticalHeaderVisible">
+                          <bool>true</bool>
+                         </attribute>
+                         <attribute name="verticalHeaderDefaultSectionSize">
+                          <number>36</number>
+                         </attribute>
+                         <row>
+                          <property name="text">
+                           <string>Strength</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>Agility</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>Stamina</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>Intellect</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>Spirit</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>Armor</string>
+                          </property>
+                         </row>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QStackedWidget" name="stackedWidget">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>200</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="currentIndex">
+                          <number>0</number>
+                         </property>
+                         <widget class="QWidget" name="Melee">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <widget class="QTableWidget" name="melee_stats_table">
+                           <property name="geometry">
+                            <rect>
+                             <x>0</x>
+                             <y>40</y>
+                             <width>200</width>
+                             <height>151</height>
+                            </rect>
+                           </property>
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>200</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>1000</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <attribute name="horizontalHeaderVisible">
+                            <bool>false</bool>
+                           </attribute>
+                           <attribute name="verticalHeaderVisible">
+                            <bool>true</bool>
+                           </attribute>
+                           <attribute name="verticalHeaderDefaultSectionSize">
+                            <number>36</number>
+                           </attribute>
+                           <row>
+                            <property name="text">
+                             <string>Damage</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Speed</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Power</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Hit Rating</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Crit Chance</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Expertise</string>
+                            </property>
+                           </row>
+                          </widget>
+                          <widget class="QLabel" name="label">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>10</y>
+                             <width>91</width>
+                             <height>16</height>
+                            </rect>
+                           </property>
+                           <property name="text">
+                            <string>Melee</string>
+                           </property>
+                          </widget>
+                         </widget>
+                         <widget class="QWidget" name="Spell">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <widget class="QTableWidget" name="spell_stats_table">
+                           <property name="geometry">
+                            <rect>
+                             <x>0</x>
+                             <y>40</y>
+                             <width>201</width>
+                             <height>141</height>
+                            </rect>
+                           </property>
+                           <attribute name="verticalHeaderDefaultSectionSize">
+                            <number>28</number>
+                           </attribute>
+                           <row>
+                            <property name="text">
+                             <string>Spell Damage</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Spell Healing</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Spell Hit</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Spell Crit</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Spell Pen</string>
+                            </property>
+                           </row>
+                           <row>
+                            <property name="text">
+                             <string>Mp5</string>
+                            </property>
+                           </row>
+                          </widget>
+                          <widget class="QLabel" name="label_2">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>10</y>
+                             <width>49</width>
+                             <height>16</height>
+                            </rect>
+                           </property>
+                           <property name="text">
+                            <string>Spell</string>
+                           </property>
+                          </widget>
+                         </widget>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_3">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>76</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="GearSlot" name="Slot111_9" native="true">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>0</y>
+                        <width>56</width>
+                        <height>56</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <item>
+                        <widget class="QLabel" name="label_19">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="text">
+                          <string>SLOT</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="GearSlot" name="Slot111_10" native="true">
+                      <property name="geometry">
+                       <rect>
+                        <x>80</x>
+                        <y>0</y>
+                        <width>56</width>
+                        <height>56</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_7">
+                       <item>
+                        <widget class="QLabel" name="label_20">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="text">
+                          <string>SLOT</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="GearSlot" name="Slot111_11" native="true">
+                      <property name="geometry">
+                       <rect>
+                        <x>160</x>
+                        <y>0</y>
+                        <width>56</width>
+                        <height>56</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>56</width>
+                        <height>56</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_8">
+                       <item>
+                        <widget class="QLabel" name="label_21">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>56</width>
+                           <height>56</height>
+                          </size>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="text">
+                          <string>SLOT</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="GearFrameRight">
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QWidget" name="verticalLayoutWidget_7">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>58</width>
+                    <height>492</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="Right_2">
+                   <item>
+                    <widget class="GearSlot" name="Slot111_17" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_30">
+                      <item>
+                       <widget class="QLabel" name="label_27">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_18" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_31">
+                      <item>
+                       <widget class="QLabel" name="label_28">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_19" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_32">
+                      <item>
+                       <widget class="QLabel" name="label_29">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_20" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_33">
+                      <item>
+                       <widget class="QLabel" name="label_30">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_21" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_34">
+                      <item>
+                       <widget class="QLabel" name="label_31">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_22" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_35">
+                      <item>
+                       <widget class="QLabel" name="label_32">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_23" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_36">
+                      <item>
+                       <widget class="QLabel" name="label_33">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="GearSlot" name="Slot111_24" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>56</width>
+                       <height>56</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_37">
+                      <item>
+                       <widget class="QLabel" name="label_34">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>56</width>
+                          <height>56</height>
+                         </size>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="text">
+                         <string>SLOT</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>308</width>
+               <height>677</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="ItemSelectMenu" name="ItemSelectFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout">
+                <property name="sizeConstraint">
+                 <enum>QLayout::SetMinAndMaxSize</enum>
+                </property>
+                <property name="labelAlignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="formAlignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="leftMargin">
+                 <number>200</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>4</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="headLabel">
+                  <property name="text">
+                   <string>Head</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="ItemComboBox" name="headComboBox">
+                  <property name="currentText">
+                   <string>DEFAULT TEST</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>DEFAULT TEST</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="neckLabel">
+                  <property name="text">
+                   <string>Neck</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="ItemComboBox" name="neckComboBox"/>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="shouldersLabel">
+                  <property name="text">
+                   <string>Shoulders</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="ItemComboBox" name="shouldersComboBox"/>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="backLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>33</width>
+                    <height>26</height>
+                   </size>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="text">
+                   <string>Back</string>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="ItemComboBox" name="backComboBox"/>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="chestLabel">
+                  <property name="text">
+                   <string>Chest</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="ItemComboBox" name="chestComboBox"/>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="wristsLabel">
+                  <property name="text">
+                   <string>Wrists</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="ItemComboBox" name="wristsComboBox"/>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="handsLabel">
+                  <property name="text">
+                   <string>Hands</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="ItemComboBox" name="handsComboBox"/>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QLabel" name="waistLabel">
+                  <property name="text">
+                   <string>Waist</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="ItemComboBox" name="waistComboBox"/>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QLabel" name="legsLabel">
+                  <property name="text">
+                   <string>Legs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="1">
+                 <widget class="ItemComboBox" name="legsComboBox"/>
+                </item>
+                <item row="9" column="0">
+                 <widget class="QLabel" name="feetLabel">
+                  <property name="text">
+                   <string>Feet</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="1">
+                 <widget class="ItemComboBox" name="feetComboBox"/>
+                </item>
+                <item row="10" column="0">
+                 <widget class="QLabel" name="finger1Label">
+                  <property name="text">
+                   <string>Finger 1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="1">
+                 <widget class="ItemComboBox" name="finger1ComboBox"/>
+                </item>
+                <item row="11" column="0">
+                 <widget class="QLabel" name="finger2Label">
+                  <property name="text">
+                   <string>Finger 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="1">
+                 <widget class="ItemComboBox" name="finger2ComboBox"/>
+                </item>
+                <item row="12" column="0">
+                 <widget class="QLabel" name="trinket1Label">
+                  <property name="text">
+                   <string>Trinket 1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="1">
+                 <widget class="ItemComboBox" name="trinket1ComboBox"/>
+                </item>
+                <item row="13" column="0">
+                 <widget class="QLabel" name="trinket2Label">
+                  <property name="text">
+                   <string>Trinket 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="1">
+                 <widget class="ItemComboBox" name="trinket2ComboBox"/>
+                </item>
+                <item row="14" column="0">
+                 <widget class="QLabel" name="mainWeaponLabel">
+                  <property name="text">
+                   <string>Main Weapon</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="14" column="1">
+                 <widget class="ItemComboBox" name="mainWeaponComboBox"/>
+                </item>
+                <item row="15" column="0">
+                 <widget class="QLabel" name="offHandLabel">
+                  <property name="text">
+                   <string>Off Hand Weapon</string>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::PlainText</enum>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="1">
+                 <widget class="ItemComboBox" name="offHandComboBox"/>
+                </item>
+                <item row="16" column="0">
+                 <widget class="QLabel" name="rangedLabel">
+                  <property name="text">
+                   <string>Ranged Weapon</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="1">
+                 <widget class="ItemComboBox" name="rangedComboBox"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+          <zorder>ItemSelectFrame</zorder>
+          <zorder>CharacterDisplayFrame</zorder>
+          <zorder>verticalSpacer</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="summary_table">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideNone</enum>
+          </property>
+          <property name="showGrid">
+           <bool>false</bool>
+          </property>
+          <property name="cornerButtonEnabled">
+           <bool>false</bool>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>150</number>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>150</number>
+          </attribute>
+          <attribute name="horizontalHeaderHighlightSections">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Amount</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Casts</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Average Cast</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Hits</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Average Hit</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Crit Percentage</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Uptime</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Miss Percentage</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>DPS</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="SimTab">
+       <attribute name="title">
+        <string>Sim</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="CombatLogTable" name="combatLog">
+          <column>
+           <property name="text">
+            <string>Time</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Event</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Result</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="SimulationEngine" name="simEngine" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>256</height>
+           </size>
+          </property>
+          <widget class="QTextEdit" name="textEdit">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>130</y>
+             <width>1001</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>100000</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="StatisticsTab">
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="SettingsTab">
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>900</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="StartSimButton" name="startSimButton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>65</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Start Sim</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1831</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StartSimButton</class>
+   <extends>QPushButton</extends>
+   <header>startsimbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>CombatLogTable</class>
+   <extends>QTableWidget</extends>
+   <header>combatlogtable</header>
+   <slots>
+    <slot>populate_combat_log()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>GearSlot</class>
+   <extends>QWidget</extends>
+   <header>gearslot</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ItemSelectMenu</class>
+   <extends>QFrame</extends>
+   <header>itemselectmenu</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SimulationEngine</class>
+   <extends>QWidget</extends>
+   <header>simulationengine</header>
+   <container>1</container>
+   <slots>
+    <slot>run_sim()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>ItemComboBox</class>
+   <extends>QComboBox</extends>
+   <header>itemcombobox</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>startSimButton</sender>
+   <signal>clicked()</signal>
+   <receiver>simEngine</receiver>
+   <slot>run_sim()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1096</x>
+     <y>849</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>888</x>
+     <y>620</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
