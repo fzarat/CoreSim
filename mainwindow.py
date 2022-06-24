@@ -40,6 +40,32 @@ class Ui_MainWindow(object):
 "    background-color: #0DFFFFFF;\n"
 "    border-radius: 5px;\n"
 "    padding: 2px;\n"
+"}\n"
+"QTabWidget::pane {\n"
+"    border-top: 2px solid #5DFFFFFF;\n"
+"}\n"
+"QTabWidget::tab-bar {\n"
+"    left: 5px;\n"
+"}\n"
+"QTabBar::tab {\n"
+"    background-color: #2BFFFFFF;\n"
+"    padding: 4px 11px;\n"
+"    border: 1px solid #2DFFFFFF;\n"
+"}\n"
+"QTabBar::tab:selected {\n"
+"    border-color: #7DFFFFFF;\n"
+"    border-bottom-color: #0DFFFFFF\n"
+"}\n"
+"QTabBar::tab:!selected {\n"
+"    margin-top: 2px;\n"
+"}\n"
+"QProgressBar {\n"
+"    color: #000000;\n"
+"    text-align: center;\n"
+"}\n"
+"QPushButton {\n"
+"    border: none;\n"
+"    background-color: #0DFFFFFF;\n"
 "}")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -857,9 +883,6 @@ class Ui_MainWindow(object):
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1831, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)

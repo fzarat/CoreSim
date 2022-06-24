@@ -43,6 +43,32 @@ QLabel {
 	background-color: #0DFFFFFF;
 	border-radius: 5px;
 	padding: 2px;
+}
+QTabWidget::pane {
+	border-top: 2px solid #5DFFFFFF;
+}
+QTabWidget::tab-bar {
+	left: 5px;
+}
+QTabBar::tab {
+	background-color: #2BFFFFFF;
+	padding: 4px 11px;
+	border: 1px solid #2DFFFFFF;
+}
+QTabBar::tab:selected {
+	border-color: #7DFFFFFF;
+	border-bottom-color: #0DFFFFFF
+}
+QTabBar::tab:!selected {
+	margin-top: 2px;
+}
+QProgressBar {
+	color: #000000;
+	text-align: center;
+}
+QPushButton {
+	border: none;
+	background-color: #0DFFFFFF;
 }</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -1959,7 +1985,6 @@ QLabel {
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
   <customwidget>
